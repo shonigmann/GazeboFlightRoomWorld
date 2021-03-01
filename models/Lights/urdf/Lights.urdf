@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Lights">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="3.00870769230769 -5.51186923076923 2.698"
+        rpy="0 0 0" />
+      <mass
+        value="50.9263497599996" />
+      <inertia
+        ixx="0.331718794677211"
+        ixy="4.63197221976783E-16"
+        ixz="8.11924018945092E-16"
+        iyy="5.7939695782828"
+        iyz="3.68520688377259E-17"
+        izz="6.12483960046401" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lights/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Lights/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

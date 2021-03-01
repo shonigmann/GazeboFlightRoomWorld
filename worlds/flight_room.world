@@ -1,0 +1,346 @@
+<sdf version='1.6'>
+  <world name='default'>
+    <light name='sun' type='directional'>
+      <cast_shadows>1</cast_shadows>
+      <pose frame=''>0 0 40 0 -0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <constant>0.9</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <model name='ground_plane'>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>65535</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>100 100</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>file://media/materials/scripts/gazebo.material</uri>
+              <name>Gazebo/Grey</name>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics name='default_physics' default='0' type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.5 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+
+    <include>
+        <static>1</static>
+        <uri>model://Nets_Mid</uri>
+        <pose>0.05 0 0 0 0 0</pose>
+    </include>
+
+    <include>
+        <static>1</static>
+	<name>whiteboard_board_1</name>
+        <uri>model://Whiteboard_boards</uri>
+        <pose>-0.02 0 0 0 0 0</pose>
+    </include>
+    <include>
+        <static>1</static>
+	<name>whiteboard_frame_1</name>
+        <uri>model://Whiteboard_Frames</uri>
+        <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <include>
+        <static>1</static>
+	<name>whiteboard_board_2</name>
+        <uri>model://Whiteboard_boards</uri>
+        <pose>-3.51 -9.37 0 0 0 1.57</pose>
+    </include>
+    <include>
+        <static>1</static>
+	<name>whiteboard_frame_2</name>
+        <uri>model://Whiteboard_Frames</uri>
+        <pose>-3.51 -9.36 0 0 0 1.57</pose>
+    </include>
+
+    <include>
+        <static>1</static>
+        <uri>model://Net_Outer</uri>
+        <pose>0.05 0 0 0 0 0</pose>
+    </include>
+    <include>
+        <static>1</static>
+        <uri>model://Walls</uri>
+        <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+        <static>1</static>
+        <uri>model://FlightRoomFloor</uri>
+        <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+        <static>1</static>
+        <uri>model://Floor</uri>
+        <pose>0 0 -.01 0 0 0</pose>
+    </include>
+    <include>
+        <static>1</static>
+        <uri>model://Chairs</uri>
+        <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+        <static>1</static>
+        <uri>model://Tables</uri>
+        <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+        <static>1</static>
+        <uri>model://Outside_Wall</uri>
+        <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+        <static>1</static>
+        <uri>model://Lights</uri>
+        <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+        <static>1</static>
+        <uri>model://Ceiling</uri>
+        <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+        <static>1</static>
+        <uri>model://CeilingGrid</uri>
+        <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+        <static>1</static>
+        <uri>model://Frames</uri>
+        <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+        <static>1</static>
+        <uri>model://Glass</uri>
+        <pose>0 0 0 0 0 0</pose>
+    </include>
+    <include>
+        <static>1</static>
+        <uri>model://Gate</uri>
+        <pose>-3 0 0 0 0 0</pose>
+    </include>
+
+    <include>
+        <static>1</static>
+        <uri>model://Cable_Tray</uri>
+        <pose>0 0 0.05 0 0 0</pose>
+    </include>
+
+    <include>
+	<name>optitrack_0</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>0.24145 -0.26604 2.56897 0.28964 0.00000 0.24302</pose>
+    </include>
+    <include>
+	<name>optitrack_1</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>1.99787 -0.44592 2.59817 0.28000 0.00000 0.20000</pose>
+    </include>
+    <include>
+	<name>optitrack_2</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>3.74094 -0.40699 2.61256 0.27000 0.00000 -0.10000</pose>
+    </include>
+    <include>
+	<name>optitrack_3</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>5.58022 -0.28462 2.59995 0.29000 0.00000 -0.20000</pose>
+    </include>
+    <include>
+	<name>optitrack_4</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>0.16941 -1.09860 2.55774 0.30373 0.08123 1.07642</pose>
+    </include>
+    <include>
+	<name>optitrack_5</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>0.16941 -2.49801 2.60000 0.30373 0.08123 1.20000</pose>
+    </include>
+    <include>
+	<name>optitrack_6</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>0.16941 -3.81805 2.55000 0.30373 0.08123 1.30000</pose>
+    </include>
+    <include>
+	<name>optitrack_7</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>0.16941 -4.92941 2.54000 0.30373 0.08123 1.40000</pose>
+    </include>
+    <include>
+	<name>optitrack_8</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>0.16941 -6.09582 2.57000 0.30373 0.08123 1.60000</pose>
+    </include>
+    <include>
+	<name>optitrack_9</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>0.16941 -7.74591 2.60000 0.30373 0.08123 1.70000</pose>
+    </include>
+    <include>
+	<name>optitrack_10</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>0.16941 -8.85687 2.55000 0.30373 0.08123 1.80000</pose>
+    </include>
+    <include>
+	<name>optitrack_11</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>0.16941 -10.14580 2.60000 0.30373 0.08123 1.90000</pose>
+    </include>
+    <include>
+	<name>optitrack_12</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>0.85282 -10.40690 2.51507 0.20000 0.07000 2.75000</pose>
+    </include>
+    <include>
+	<name>optitrack_13</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>2.97002 -10.40690 2.56000 0.20000 0.05000 3.00000</pose>
+    </include>
+    <include>
+	<name>optitrack_14</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>4.19134 -10.40690 2.60000 0.20000 -0.05000 -3.00000</pose>
+    </include>
+    <include>
+	<name>optitrack_15</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>5.38229 -10.40690 2.54000 0.20000 -0.10000 -2.75000</pose>
+    </include>
+    <include>
+	<name>optitrack_16</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>6.56000 -10.43010 2.60000 0.20805 0.00000 -2.07421</pose>
+    </include>
+    <include>
+	<name>optitrack_17</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>6.56000 -9.13010 2.55000 0.21005 -0.01000 -1.90000</pose>
+    </include>
+    <include>
+	<name>optitrack_18</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>6.56000 -7.83010 2.54000 0.21205 -0.02000 -1.75000</pose>
+    </include>
+    <include>
+	<name>optitrack_19</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>6.56000 -6.53010 2.60000 0.21405 -0.03000 -1.60000</pose>
+    </include>
+    <include>
+	<name>optitrack_20</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>6.56000 -5.23010 2.60000 0.21605 -0.04000 -1.45000</pose>
+    </include>
+    <include>
+	<name>optitrack_21</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>6.56000 -3.93010 2.56000 0.21805 -0.05000 -1.30000</pose>
+    </include>
+    <include>
+	<name>optitrack_22</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>6.56000 -2.63010 2.55000 0.22005 -0.06000 -1.15000</pose>
+    </include>
+    <include>
+	<name>optitrack_23</name>
+	<static>1</static>
+	<uri>model://Optitrack_41</uri>
+	<pose>6.56000 -1.33010 2.60000 0.24000 -0.08000 -1.05000</pose>
+    </include>
+
+    <gui fullscreen='0'>
+      <camera name='user_camera'>
+        <pose frame=''>0.744733 -10.1242 2.17494 0 0.199643 0.864202</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+
+  </world>
+</sdf>

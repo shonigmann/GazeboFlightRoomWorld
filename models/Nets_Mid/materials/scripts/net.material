@@ -1,0 +1,20 @@
+material bar_stool
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.5 0.5 0.5 0.20
+			diffuse 0.5 0.5 0.5 0.20
+			specular 0.2 0.2 0.2 0.20
+			emissive 0 0 0 .1
+			texture_unit
+			{
+				materials/texture Net2.png
+				filtering anistropic
+				max_anisotropy 16
+				scale 0.1 0.1
+			}
+		}
+	}
+}

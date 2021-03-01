@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="Lights">
+  <link
+    name="base_link">
+    <inertial>
+<pose> 3.00870769230769 -5.51186923076923 2.698 0 0 0</pose>
+<inertia>
+<ixx>0.331718794677211</ixx>
+<ixy>4.63197221976783E-16</ixy>
+<ixz>8.11924018945092E-16</ixz>
+<iyy>5.7939695782828</iyy>
+<iyz>3.68520688377259E-17</iyz>
+<izz>6.12483960046401</izz>
+</inertia>
+<mass> 50.9263497599996 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Lights/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+<material>
+<ambient>1 1 1 1</ambient>
+<diffuse>1 1 1 1</diffuse>
+<specular>0 0 0 0</specular>
+<emissive>1 1 1 1</emissive>
+      </material>
+    </visual>
+<collision name = base_link_col>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Lights/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+    </collision>
+  </link>
+</model> 
+</sdf>

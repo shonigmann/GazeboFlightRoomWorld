@@ -1,0 +1,20 @@
+material wood
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.8 0.8 0.8 1
+			diffuse 0.8 0.8 0.8 1
+			specular 0.6 0.6 0.6 1
+			emissive 0 0 0 1
+			texture_unit
+			{
+				materials/texture wood.jpg
+				filtering anistropic
+				max_anisotropy 16
+				scale 1.0 1.0
+			}
+		}
+	}
+}

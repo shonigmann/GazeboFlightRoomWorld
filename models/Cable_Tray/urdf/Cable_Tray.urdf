@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Cable_Tray">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="3.34999999999995 -5.4864 2.447"
+        rpy="0 0 0" />
+      <mass
+        value="309.108736805822" />
+      <inertia
+        ixx="5270.45716121936"
+        ixy="-1.46104845534427E-11"
+        ixz="-3.28652753149154E-13"
+        iyy="2574.1888545759"
+        iyz="1.94614779248946E-12"
+        izz="7844.11421688156" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cable_Tray/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.529411764705882 0.549019607843137 0.549019607843137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Cable_Tray/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

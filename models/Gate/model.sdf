@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="Gate">
+  <link
+    name="base_link">
+    <inertial>
+<pose> 3.04504654713027 -6.56221734584649 0.545724070797634 0 0 0</pose>
+<inertia>
+<ixx>2.51535603476188</ixx>
+<ixy>3.6286891460374E-17</ixy>
+<ixz>-6.49421501013503E-16</ixz>
+<iyy>2.83172926520064</iyy>
+<iyz>-6.03431567425353E-16</iyz>
+<izz>0.513769208068451</izz>
+</inertia>
+<mass> 8.81017681500004 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<scale>2 1 1</scale>
+<uri>model://Gate/meshes/base_link.dae</uri>
+</mesh>
+      </geometry>
+
+    </visual>
+<collision name = base_link_col>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<scale>1 2 1</scale>
+<uri>model://Gate/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+    </collision>
+  </link>
+</model> 
+</sdf>

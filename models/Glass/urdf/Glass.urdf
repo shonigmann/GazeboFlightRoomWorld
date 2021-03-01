@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Glass">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="4.08466886187324 -5.50657424699601 1.56058937143448"
+        rpy="0 0 0" />
+      <mass
+        value="315.199869419516" />
+      <inertia
+        ixx="34.3044732112567"
+        ixy="6.90298272923976E-16"
+        ixz="3.85701023150811E-15"
+        iyy="45.4944866277411"
+        iyz="-1.73296128004826E-14"
+        izz="32.8005559258402" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Glass/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 0.15" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Glass/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

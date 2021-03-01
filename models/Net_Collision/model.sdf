@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="Net_Collision">
+  <link
+    name="base_link">
+    <inertial>
+<pose> 0.0100000000000852 -5.52233333333337 1.25 0 0 0</pose>
+<inertia>
+<ixx>0.3833495952</ixx>
+<ixy>2.89454043611107E-16</ixy>
+<ixz>-1.96538753903255E-19</ixz>
+<iyy>0.1284963108</iyy>
+<iyz>-7.21105903758074E-17</iyz>
+<izz>0.254857746</izz>
+</inertia>
+<mass> 0.267696 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Net_Collision/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+<material>
+<ambient>0.843137254901961 0.843137254901961 0.843137254901961 0.1</ambient>
+<diffuse>0.843137254901961 0.843137254901961 0.843137254901961 0.1</diffuse>
+<specular>0 0 0 0</specular>
+<emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+<collision name = base_link_col>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Net_Collision/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+    </collision>
+  </link>
+</model> 
+</sdf>

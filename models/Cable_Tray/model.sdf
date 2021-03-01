@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="Cable_Tray">
+  <link
+    name="base_link">
+    <inertial>
+<pose> 3.34999999999995 -5.4864 2.447 0 0 0</pose>
+<inertia>
+<ixx>5270.45716121936</ixx>
+<ixy>-1.46104845534427E-11</ixy>
+<ixz>-3.28652753149154E-13</ixz>
+<iyy>2574.1888545759</iyy>
+<iyz>1.94614779248946E-12</iyz>
+<izz>7844.11421688156</izz>
+</inertia>
+<mass> 309.108736805822 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Cable_Tray/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+<material>
+<ambient>0.529411764705882 0.549019607843137 0.549019607843137 1</ambient>
+<diffuse>0.529411764705882 0.549019607843137 0.549019607843137 1</diffuse>
+<specular>0 0 0 0</specular>
+<emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+<collision name = base_link_col>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Cable_Tray/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+    </collision>
+  </link>
+</model> 
+</sdf>

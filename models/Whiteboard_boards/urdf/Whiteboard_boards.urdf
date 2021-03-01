@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Whiteboard_boards">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="4.1786329898672 -6.66501442866761 1.475"
+        rpy="0 0 0" />
+      <mass
+        value="92.5894799999992" />
+      <inertia
+        ixx="27.3562509923272"
+        ixy="1.3513331049184"
+        ixz="1.26291683320031E-13"
+        iyy="42.6838327326723"
+        iyz="-1.54165454869996E-14"
+        izz="46.6936463429997" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Whiteboard_boards/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Whiteboard_boards/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

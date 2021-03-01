@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Nets_Mid">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.00749595698354321 -5.51089872810005 1.37498139957364"
+        rpy="0 0 0" />
+      <mass
+        value="70.3943704098267" />
+      <inertia
+        ixx="92.0878146611574"
+        ixy="0.00139467455757706"
+        ixz="-6.23157800600837E-05"
+        iyy="24.6608816330176"
+        iyz="0.000259410555615873"
+        izz="67.4373105101985" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Nets_Mid/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Nets_Mid/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

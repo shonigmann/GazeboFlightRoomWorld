@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="Whiteboard_Frames">
+  <link
+    name="base_link">
+    <inertial>
+<pose> 4.17248888903168 -6.6661208375677 0.687992682060947 0 0 0</pose>
+<inertia>
+<ixx>1.36391989761157</ixx>
+<ixy>0.0789396184465819</ixy>
+<ixz>-0.00010214810981847</ixz>
+<iyy>2.25929740494903</iyy>
+<iyz>-0.000187545787416895</iyz>
+<izz>2.84470271624541</izz>
+</inertia>
+<mass> 17.1845747220821 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Whiteboard_Frames/meshes/base_link_single.STL</uri>
+</mesh>
+      </geometry>
+<material>
+<ambient>0.666470588235294 0.666862745098039 0.667254901960784 1</ambient>
+<diffuse>0.666470588235294 0.666862745098039 0.667254901960784 1</diffuse>
+<specular>.2 .2 .2 .2</specular>
+<emissive>.2 .2 .2 1</emissive>
+      </material>
+    </visual>
+<collision name = base_link_col>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Whiteboard_Collision/meshes/base_link_single.stl</uri>
+</mesh>
+      </geometry>
+    </collision>
+  </link>
+</model> 
+</sdf>

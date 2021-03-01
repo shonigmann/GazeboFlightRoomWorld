@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Outside_Wall">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="3.2425955380315 -6.18481831144165 1.5"
+        rpy="0 0 0" />
+      <mass
+        value="1949.97915540529" />
+      <inertia
+        ixx="94963.2243101229"
+        ixy="-1.82036816176458E-09"
+        ixz="-2.31447986381892E-10"
+        iyy="79596.9302053139"
+        iyz="-8.53139385485758E-11"
+        izz="171635.185782329" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Outside_Wall/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Outside_Wall/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

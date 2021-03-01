@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="Frames">
+  <link
+    name="base_link">
+    <inertial>
+<pose> 4.79475019513715 -5.48186119087491 1.33712751339411 0 0 0</pose>
+<inertia>
+<ixx>216.533699352872</ixx>
+<ixy>1.76699290413911E-14</ixy>
+<ixz>3.31805944935109E-14</ixz>
+<iyy>354.821078652118</iyy>
+<iyz>1.10522049988853E-13</iyz>
+<izz>384.078696020326</izz>
+</inertia>
+<mass> 298.615452307199 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Frames/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+<material>
+<ambient>0 0 0 1</ambient>
+<diffuse>0 0 0 1</diffuse>
+<specular>0 0 0 0</specular>
+<emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+<collision name = base_link_col>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Frames/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+    </collision>
+  </link>
+</model> 
+</sdf>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="Glass_Opaque">
+  <link
+    name="base_link">
+    <inertial>
+<pose> 4.08466886187324 -5.50657424699601 1.56058937143448 0 0 0</pose>
+<inertia>
+<ixx>34.3044732112567</ixx>
+<ixy>6.90298272923976E-16</ixy>
+<ixz>3.85701023150811E-15</ixz>
+<iyy>45.4944866277411</iyy>
+<iyz>-1.73296128004826E-14</iyz>
+<izz>32.8005559258402</izz>
+</inertia>
+<mass> 315.199869419516 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Glass_Opaque/meshes/base_link.dae</uri>
+</mesh>
+      </geometry>
+
+    </visual>
+<collision name = base_link_col>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Glass_Opaque/meshes/base_link.dae</uri>
+</mesh>
+      </geometry>
+    </collision>
+  </link>
+</model> 
+</sdf>

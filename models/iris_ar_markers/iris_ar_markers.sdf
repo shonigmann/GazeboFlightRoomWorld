@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+
+<sdf version="1.5">
+  <model name='iris_ar_markers'>
+    <include>
+      <uri>model://iris</uri>
+    </include>
+
+    <include>
+      <uri>model://ar_cube_0-5</uri>
+      <pose>0.13 -0.22 -0.023 0 0 0</pose>
+    </include>
+
+    <joint name="ar1_joint" type="revolute">
+      <child>ar_cube_0-5::link</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <include>
+      <uri>model://ar_cube_6-11</uri>
+      <pose>-0.13 0.22 -0.023 0 0 0</pose>
+    </include>
+
+    <joint name="ar2_joint" type="revolute">
+      <child>ar_cube_6-11::link</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <include>
+      <uri>model://ar_cube_12-17</uri>
+      <pose>0.13 0.22 -0.023 0 0 0</pose>
+    </include>
+
+    <joint name="ar3_joint" type="revolute">
+      <child>ar_cube_12-17::link</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+    <include>
+      <uri>model://ar_cube_18-23</uri>
+      <pose>-0.13 -0.22 -0.023 0 0 0</pose>
+    </include>
+
+    <joint name="ar4_joint" type="revolute">
+      <child>ar_cube_18-23::link</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+
+    <include>
+      <uri>model://ar_cube_24-29</uri>
+      <pose>0 0 .03 0 0 0</pose>
+    </include>
+    <joint name="ar5_joint" type="revolute">
+      <child>ar_cube_24-29::link</child>
+      <parent>iris::base_link</parent>
+      <axis>
+        <xyz>1 0 0</xyz>
+        <limit>
+          <lower>0</lower>
+          <upper>0</upper>
+          <effort>0</effort>
+          <velocity>0</velocity>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+
+  </model>
+</sdf>
+
+
+
+
+

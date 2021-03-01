@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="CeilingGrid">
+  <link
+    name="base_link">
+    <inertial>
+<pose> 3.05750000000002 -5.58150000000014 2.6985 0 0 0</pose>
+<inertia>
+<ixx>2250.39650489471</ixx>
+<ixy>3.54508089550566E-12</ixy>
+<ixz>8.69468815369962E-16</ixz>
+<iyy>1007.09529436575</iyy>
+<iyz>-4.73382805751151E-13</iyz>
+<izz>3257.49146387203</izz>
+</inertia>
+<mass> 223.59228559204 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://CeilingGrid/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+<material>
+<ambient>0.529411764705882 0.549019607843137 0.549019607843137 1</ambient>
+<diffuse>0.529411764705882 0.549019607843137 0.549019607843137 1</diffuse>
+<specular>0 0 0 0</specular>
+<emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+<collision name = base_link_col>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://CeilingGrid/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+    </collision>
+  </link>
+</model> 
+</sdf>

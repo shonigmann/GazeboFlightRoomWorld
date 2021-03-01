@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Net_Collision">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0100000000000852 -5.52233333333337 1.25"
+        rpy="0 0 0" />
+      <mass
+        value="0.267696" />
+      <inertia
+        ixx="0.3833495952"
+        ixy="2.89454043611107E-16"
+        ixz="-1.96538753903255E-19"
+        iyy="0.1284963108"
+        iyz="-7.21105903758074E-17"
+        izz="0.254857746" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Net_Collision/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.843137254901961 0.843137254901961 0.843137254901961 0.1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Net_Collision/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

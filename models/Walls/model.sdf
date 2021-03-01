@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="Walls">
+  <link
+    name="base_link">
+    <inertial>
+<pose> 2.34949944582565 -5.49596997809541 1.65531615925928 0 0 0</pose>
+<inertia>
+<ixx>72709.5072177744</ixx>
+<ixy>-3.8167627221271E-13</ixy>
+<ixz>-444.173490155236</ixz>
+<iyy>15946.9382028641</iyy>
+<iyz>-77.2416978554188</iyz>
+<izz>75340.5899115106</izz>
+</inertia>
+<mass> 9695.62419839998 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Walls/meshes/base_link.dae</uri>
+</mesh>
+      </geometry>
+    </visual>
+<collision name = base_link_col>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Walls/meshes/base_link.dae</uri>
+</mesh>
+      </geometry>
+    </collision>
+  </link>
+</model> 
+</sdf>

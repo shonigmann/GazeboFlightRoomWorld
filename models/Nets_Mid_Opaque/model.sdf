@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="Nets_Mid_Opaque">
+  <link
+    name="base_link">
+    <inertial>
+<pose> 0.00749595698354321 -5.51089872810005 1.37498139957364 0 0 0</pose>
+<inertia>
+<ixx>92.0878146611574</ixx>
+<ixy>0.00139467455757706</ixy>
+<ixz>-6.23157800600837E-05</ixz>
+<iyy>24.6608816330176</iyy>
+<iyz>0.000259410555615873</iyz>
+<izz>67.4373105101985</izz>
+</inertia>
+<mass> 70.3943704098267 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Nets_Mid_Opaque/meshes/base_link.dae</uri>
+</mesh>
+      </geometry> 
+
+    </visual>
+<collision name = base_link_col>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Nets_Mid_Opaque/meshes/base_link.dae</uri>
+</mesh>
+      </geometry>
+    </collision>
+  </link>
+</model> 
+</sdf>

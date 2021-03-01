@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="Ceiling">
+  <link
+    name="base_link">
+    <inertial>
+<pose> 3.06011238639071 -5.58539017472581 2.7015 0 0 0</pose>
+<inertia>
+<ixx>367.601378748366</ixx>
+<ixy>-1.31469754708647</ixy>
+<ixz>8.79123637141452E-17</ixz>
+<iyy>165.992326718623</iyy>
+<iyz>2.25068448703889E-14</iyz>
+<izz>533.593650947798</izz>
+</inertia>
+<mass> 36.3461276688379 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Ceiling/meshes/base_link.dae</uri>
+</mesh>
+      </geometry>
+    </visual>
+<collision name = base_link_col>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Ceiling/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+    </collision>
+  </link>
+</model> 
+</sdf>

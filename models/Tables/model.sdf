@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="Tables">
+  <link
+    name="base_link">
+    <inertial>
+<pose> -0.74098342495566 -5.49066250097687 0.700394758064515 0 0 0</pose>
+<inertia>
+<ixx>21.4637355515712</ixx>
+<ixy>0.542039585018671</ixy>
+<ixz>2.70068302066733E-15</ixz>
+<iyy>5.96384197918802</iyy>
+<iyz>1.55643113927747E-14</iyz>
+<izz>22.9988251240906</izz>
+</inertia>
+<mass> 62.1790756416001 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Tables/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+<material>
+<ambient>0.250980392156863 0.250980392156863 0.250980392156863 1</ambient>
+<diffuse>0.250980392156863 0.250980392156863 0.250980392156863 1</diffuse>
+<specular>0 0 0 0</specular>
+<emissive>0 0 0 1</emissive>
+      </material>
+    </visual>
+<collision name = base_link_col>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Tables/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+    </collision>
+  </link>
+</model> 
+</sdf>

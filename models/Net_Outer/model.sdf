@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="Net_Outer">
+  <link
+    name="base_link">
+    <inertial>
+<pose> 0.00746530560592431 -5.50984272667201 0.517905847221931 0 0 0</pose>
+<inertia>
+<ixx>11.5992653999913</ixx>
+<ixy>0.000357843390688311</ixy>
+<ixz>-5.54058479594909E-05</ixz>
+<iyy>0.0785868670444765</iyy>
+<iyz>-0.000114146956387681</iyz>
+<izz>11.5223175298933</izz>
+</inertia>
+<mass> 12.0313898106406 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://Net_Outer/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+<material>
+<ambient>0.752941176470588 0.752941176470588 0.752941176470588 1</ambient>
+<diffuse>0.752941176470588 0.752941176470588 0.752941176470588 1</diffuse>
+<specular>0 0 0 0</specular>
+<emissive>.4 .4 .4 1</emissive>
+      </material>
+    </visual>
+  </link>
+</model> 
+</sdf>

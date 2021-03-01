@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Ceiling">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="3.06011238639071 -5.58539017472581 2.7015"
+        rpy="0 0 0" />
+      <mass
+        value="36.3461276688379" />
+      <inertia
+        ixx="367.601378748366"
+        ixy="-1.31469754708647"
+        ixz="8.79123637141452E-17"
+        iyy="165.992326718623"
+        iyz="2.25068448703889E-14"
+        izz="533.593650947798" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ceiling/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Ceiling/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

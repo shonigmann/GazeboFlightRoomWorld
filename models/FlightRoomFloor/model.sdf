@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sdf version='1.5'>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<model 
+  name="FlightRoomFloor">
+  <link
+    name="base_link">
+    <inertial>
+<pose> 3.3373 -5.4991 0.004999999999999 0 0 0</pose>
+<inertia>
+<ixx>110.605179592745</ixx>
+<ixy>1.26641640710065E-31</ixy>
+<ixz>-3.09118574591828E-18</ixz>
+<iyy>42.6598895403203</iyy>
+<iyz>6.77237855834522E-15</iyz>
+<izz>153.264877620066</izz>
+</inertia>
+<mass> 11.4907799931543 </mass>
+    </inertial>
+<visual name = base_link_vis>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://FlightRoomFloor/meshes/base_link.dae</uri>
+</mesh>
+      </geometry>
+    </visual>
+<collision name = base_link_col>
+<pose>0.0 0.0 0.0 0.0 0.0 0.0 </pose>
+      <geometry>
+<mesh>
+<uri>model://FlightRoomFloor/meshes/base_link.STL</uri>
+</mesh>
+      </geometry>
+    </collision>
+  </link>
+</model> 
+</sdf>
