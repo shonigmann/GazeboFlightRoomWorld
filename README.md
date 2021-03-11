@@ -7,6 +7,12 @@ Models can be expected to be visually representative, but no claims are made of 
 Some models, such the desk chairs, were taken from grabcad.com and are credited in their respective model.config files. 
 
 ## Basic Use
+The model folder must be on the `GAZEBO_MODEL_PATH` for the world to properly load. The recommended way of doing this in Ubuntu is to run the command:
+```
+export GAZEBO_MODEL_PATH=*PATH TO THIS FOLDER*/models:$GAZEBO_MODEL_PATH
+```
+You can also add this command to your `.bashrc` file to ensure the folder is always on your model path, or add it to your model path in your ROS launch file. 
+
 To load the world in Gazebo, run the following command from the repository's root directory:
 ```
 gazebo -v flight_room.world
